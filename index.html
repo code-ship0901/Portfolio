@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vanshika Dhiman - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-----------------------------------------------home--------------------------------------------------------------------->    
+    <div id="header">
+        <div class="container">
+<!----nav bar----->
+            <nav>
+                <img src="images/logo1.png" alt="logo" >
+                <ul style="padding-right: 40px;">
+                    <li><a href="">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+<!--the home page ---->
+            <div class="header-text">
+                <p>Web Developer</p><br>
+                <h1>Hi, I'm <span style="color:#f90aa2;">Vanshika</span> <br>Dhiman from India</h1>
+            </div>
+        </div>
+    </div>
+    <br>
+<!------------------------------------------------about-------------------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+<br><br><br><br>                                     
+                    <img src="images/myimage.jpg" >
+                </div>
+                <div class="about-col-2">
+<br><br><br><br>
+                    <h1 class="sub-title">About Me</h1><br><br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius sed placeat velit optio laudantium quos rem asperiores cum eligendi, doloribus, itaque voluptatibus amet pariatur illum magnam autem corporis cupiditate nemo?</p>
+                    <br><br>
+<!--------headings------>   
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('technologies')">Technologies</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+              
+<!--edu-->
+                    <div class="tab-contents  active-tab" id="education">
+                        <ul>
+                            <li><span>10th</span><br>Little Flower Convent School 14-Pkl CGPA-9.9 </li>
+                            <li><span>12th</span><br>Shishu Niketan Public School 43-Chd CGPA-9.1 </li>
+                            <li><span>JEE mains</span><br>91 Percentile</li>
+                            <li><span>College</span><br>BE. CSE at Chitkara University</li>
+                        </ul>
+                    </div>
+<!--tech-->
+                    <div class="tab-contents" id="technologies">
+                        <ul>
+                            <li><span>Python</span><br>I have put in 4 months </li>
+                            <li><span>HTML CSS</span><br>To make websites</li>
+                            <li><span>JS</span><br>To make websites responsive</li>
+                        </ul>
+                    </div>
+
+                    
+<!--skills-->
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>WebDev</span><br>Making responsive Web Pages </li>
+                            <li><span>Designing</span><br>Designing personalised Web Pages </li>
+                            <li><span>Frontend</span><br>Main work is Frontend based</li>
+                        </ul>
+                    </div>
+<!--exp-->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Class project</span><br>Online learning platform<br></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------------------------------Services----------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+
+            <div style="width: 80%;">
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development  </h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, voluptatum provident! Fuga aliquam eveniet quibusdam quos nesciunt dolore, aspernatur sit rem, modi labore totam, dolorum possimus atque? Perspiciatis, commodi iure?</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div >
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, voluptatum provident! Fuga aliquam eveniet quibusdam quos nesciunt dolore, aspernatur sit rem, modi labore totam, dolorum possimus atque? Perspiciatis, commodi iure?</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div >
+                <h2>UI/UX</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, voluptatum provident! Fuga aliquam eveniet quibusdam quos nesciunt dolore, aspernatur sit rem, modi labore totam, dolorum possimus atque? Perspiciatis, commodi iure?</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+//-----------------------------------------for apperance of text and disappearance of txt in about section----
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (let tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.target.classList.add("active-link");
+
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+//-----------------------------------------------------------------------------------------------------------
+</script>
+
+</body>
+</html>
